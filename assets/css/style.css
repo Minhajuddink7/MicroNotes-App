@@ -4,5 +4,36 @@
 html {
   scroll-behavior: smooth;
 }
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.notes {
+  padding-bottom: 60px;
+}
+pre {
+  font-size: 1rem;
+}
 
+.flexView {
+  display: flex;
+  flex-wrap: wrap;
 
+  margin: 0 -10px;
+}
+.flexView > * {
+  text-align: justify;
+  width: 280px;
+  margin: 0 10px;
+}
+.card {
+  border-radius: 10px;
+}
+.options {
+  position: absolute;
+
+  bottom: 15px;
+
+  right: 20px;
+}

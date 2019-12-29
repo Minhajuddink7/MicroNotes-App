@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My JavaScript App</title>
+  <title>Micro Notes App</title>
   <link rel="stylesheet" href="bootstrap.min.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -24,18 +24,19 @@
       <h1>Write Them Down</h1>
       <p class="lead">What's on your mind?</p>
       <div class="form-group">
-        <input type="text" id="title" class="form-control" placeholder="Note Title">
+        <input type="text" autofocus id="title" class="form-control" placeholder="Note Title">
+
       </div>
       <div class="form-group">
-        <textarea id="body" rows="5" class="form-control" placeholder="Note Body"></textarea>
+        <textarea id="body" rows="3" class="form-control" placeholder="Note Body"></textarea>
 
       </div>
       <input type="hidden" id="id" value="">
-      <button class="note-submit btn btn-primary btn-block">Post Your Note</button>
+      <button class="note-submit btn btn-primary btn-block">Add Your Note</button>
       <span class="form-end"></span>
     </div>
     <br>
-    <div id="notes"></div>
+    <div id="notes" class="flexView"></div>
   </div>
   <footer class="mt-5 p-3 text-center bg-light">
     Developed By Minhajuddin
