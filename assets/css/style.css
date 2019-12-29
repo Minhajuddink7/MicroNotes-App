@@ -12,28 +12,32 @@ footer {
 .notes {
   padding-bottom: 60px;
 }
-pre {
-  font-size: 1rem;
+
+.gridView {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.flexView {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin: 0 -10px;
-}
-.flexView > * {
-  text-align: justify;
-  width: 280px;
-  margin: 0 10px;
-}
 .card {
   border-radius: 10px;
 }
 .options {
   position: absolute;
-
   bottom: 15px;
-
   right: 20px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  .gridView {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .gridView {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
 }
